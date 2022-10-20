@@ -47,9 +47,12 @@
         at node:internal/main/run_main_module:22:47
     ```
     Explanation: Similar to question 5. Line 13 is attempting to make a reference to a variable outside of its blockscope. This results in the error 'discountPrice' is not defined since it was declared in the for loop and now we have exited that block at line 13. 
-<!-- same as question 3 with some difference, is it okay to refer to that answer or should I write out the whole logic-->
 7. 150
     Explanation: 'final price' is declared before enetring the for loop, therefore line 13 makes a call to the reference in the correct blockscope and we are able to obtain the correct value. The output is identical to that of question 3 with similar code logic.
+    In the last iteration of the for loop, 'discountedPrice' will be set to the value of (price[2]* (1-0.5)). It can be calculated by ... <br>
+    discountedPrice = price[2]*(1-0.5) <br>
+                    = 300*0.5<br>
+                    = 150<br>
 8. [ 50, 100, 150 ]
     Exlpanation: Although nothing is written to the log, we we can se that the return statement is within the blockscope of the declaration of 'discounted' with the keyword 'let'. Hence, output is identical to using keyword 'var' in question 4. 
 9. Error: <br>
@@ -70,7 +73,7 @@
 ```
     Explanation: 'i' was declared with the keyword 'let'. Therefore, it only has a blockscope and line 11 attempts to mkae a call to the variable outside this scope. Hence the error above occurs and deems that 'i' is not defined. Similar to question 5.  
 10. 3
-    Explanation: 'length' is initialled to be the size of the 'prices' array, whhich is 3. We are able to access this value since we are making a reference to it within its blockscope, so no error occurs. 
+    Explanation: 'length' is initialized to be the size of the 'prices' array, whhich is 3. We are able to access this value since we are making a reference to it within its blockscope, so no error occurs. 
 11. [ 50, 100, 150 ]
     Exlpanation: Although nothing is written to the log, we we can se that the return statement is within the blockscope of the declaration of 'discounted' with the keyword 'const'. EVen though it is 'const', we are still able to push onto the array, just not able to reassign the value. Hence, output is identical to using keyword 'var' in question 4. 
 12. <!-- output is undefined, check with TA !-->
@@ -107,10 +110,9 @@
         Explanation: The operator === checks equality taking into account types. Therefore the comparison of these values evaluates to false since the values are of different types string and int.  
     E. false<br>
         Explanation: 'true' has the numeric conversion of 0. The expression is 0 == 2 which is false. 
-    <!-- check again-->
     F. true<br>
         Explanation: THe boolean value of 2 is  true. Hence we are evaluating true === true, which is true. 
-15. THe == operator equates values whiel applying type conversions. Hence, variables could be of different types and the expression could be evaluated to true. The === operator does not do this conversion so values of different types will never be equal. 
+15. The == operator equates values whil2 applying type conversions. Hence, variables could be of different types and the expression could be evaluated to true. The === operator does not do this conversion so values of different types will never be equal. 
 16.  See part2-question16.js file. 
 17. [ 2, 4, 6 ]
     Explanation: Line 13 makes a call to the function modifyArray and passes in the following arguments, [1,2,3] and doSomething.

@@ -12,7 +12,7 @@ function discountPrices(prices,discount){
     //console.log(i); 
     //console.log(discountedPrice);
     //console.log(finalPrice);//question 4
-
+    //console.log(discounted);
     return discounted;
 }
 

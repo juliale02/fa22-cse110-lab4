@@ -1,7 +1,5 @@
 1. values added:  20
 2. final result:  20
-   <!-- check this again with TA since running all of code will error but commenting out the line that causes the error will run successfully, check with TA what is asked-->
-   <!-- check if should have a .js for question 1 and question 2 separately with lines commented out-->
 3. values added:  20 
 
 4. Error: 
@@ -35,7 +33,7 @@
             at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
             at node:internal/main/run_main_module:22:47
 
-    Explanation: 'result' is initialled with the keyowrd 'const' which prvents it from being reassigned a value. However, line 7 attempts to reassign it to the values 'num1 + num2'.
+    Explanation: 'result' is initialled with the keyowrd 'const' which prevents it from being reassigned a value. However, line 7 attempts to reassign it to the values 'num1 + num2'.
     
 6. Error: 
 
@@ -53,4 +51,4 @@
             at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
             at node:internal/main/run_main_module:22:47
 
-    Explanation: 'result' is initialled with the keyowrd 'const' which prvents it from being reassigned a value. However, line 7 attempts to reassign it to the values 'num1 + num2'. In addition, the calue is out of the block scope that result was declared in. 
+    Explanation: 'result' is initialled with the keyowrd 'const' which prvents it from being reassigned a value. However, line 7 attempts to reassign it to the values 'num1 + num2'. In addition, the value is out of the block scope that result was declared in. 

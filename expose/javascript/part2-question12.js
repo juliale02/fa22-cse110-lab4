@@ -12,6 +12,6 @@ let student = {
 
 console.log(student.name);//A
 console.log(student["Grad Year"]);//B
-console.log(student.greeting());//C
+student.greeting();//C
 console.log(student["Favorite Teacher"].name);//D
 console.log(student.courseLoad[0]);//E
